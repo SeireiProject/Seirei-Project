@@ -1,0 +1,29 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Sensitive files - 絶対に含めない！
+.env
+*.env
+
+# Data files (ログやメモリは含めない)
+data/*.json
+data/*.jsonl
+data/temp/
+# config/identity.json # 内省結果は含めない方が安全
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db

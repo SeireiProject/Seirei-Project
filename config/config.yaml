@@ -1,0 +1,28 @@
+# YouTube連携設定
+youtube:
+  # デフォルトのビデオID (run_youtube_live.py で使用)
+  default_video_id: ""
+
+# 大規模言語モデル設定
+llm:
+  # Ollama関連
+  ollama:
+    # 対話に使用するOllamaモデル名
+    model: "elyza:jp8b"
+    # OllamaサーバーのホストURL (ollama.py で使用)
+    host: "http://localhost:11434"
+  # Gemini関連
+  gemini:
+    # 内省に使用するGeminiモデル名
+    model: "gemini-1.5-pro"
+    # APIキーは .env から読み込むのでここには書かない
+
+# 音声合成(TTS)設定
+tts:
+  # Aivis関連 (tts.py で使用)
+  aivis:
+    url: "http://127.0.0.1:10101"
+    speaker_id: 888753760
+  # 出力デバイス名 (tts.py で使用)
+  # 空文字列 "" や null にするとデフォルトデバイスを使用
+  output_device_name: "Yamaha SYNCROOM Driver" 
